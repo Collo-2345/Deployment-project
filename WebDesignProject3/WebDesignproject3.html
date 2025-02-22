@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portifolio website</title>
+    <link rel="stylesheet" href="WebDesignproject3.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+      <div class="header">
+        <div class="Container">
+            <nav class="navbar">
+                <img src="/WebDesignProject3/logo1.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class='bx bxs-x-square' onclick="closemenu()"></i>
+                </ul> 
+                <i class='bx bx-menu' onclick="openmenu()"></i>
+               
+            </nav>
+            
+              <div class="overalldiv">
+            <div class="header-text">
+                <p>UI/UGP Designer</p>
+                <h1>Hi, I'm <span>Collo</span><br> from United Kingdom</h1>
+            </div>
+             <div class="backgrougroundpic">
+                <img src="/WebDesignproject3/pic3.jpg" >
+             </div>
+            </div>
+        </div>
+      </div>  
+      <!-- ABOUT SECTION-->
+       <div id="about">
+          <div class="about-container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/WebDesignProject3/Collopic.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1>About Me</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur 
+                        adipisicing elit. Tempora et suscipit maiores
+                         quaerat blanditiis. <br>Earum neque velit voluptatem 
+                         consequuntur, natus quo fugit,quia in mollitia, 
+                         eos distinctio perferendis sequi amet?</p>
+
+                         <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                         </div>
+                         <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI?UGI</span><br> Designing Web/App Interfaces</li>
+                                <li><span>Web Development</span><br> App Development and design</li>
+                                <li><span>Software Testing</span><br>Bulding Android/IOS apps</li>
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2021 - Current</span><br> UI/UGI Design Training at ET Institute.</li>
+                                <li><span>2019 - 2021</span><br> Team lead at startApp KICC</li>
+                                <li><span>2017 - 2019</span><br>Bulding Android/IOS apps</li>
+                                <li><span>2016 - 2017</span><br>Attachment at IT & Information Tech</li>
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>UI?UGP</span><br> Designing Web/App Interfaces</li>
+                                <li><span>Web Development</span><br> App Development and design</li>
+                                <li><span>Software Testing</span><br>Bulding Android/IOS apps</li>
+                            </ul>
+                         </div>
+                </div>
+            </div>
+          </div>
+       </div>
+      <!------------services---------->
+               <div id="services">
+                        <div class="services-container">
+                            <h1 class="sub=title">My Services</h1>
+                            <div class="services-list">
+                                <div>
+                                    <h2><span>Web</span> design</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Repellat vel labore commodi quo velit doloremque consequatur maiores 
+                                        repellendus sed dignissimos natus assumenda, blanditiis nobis sint quae voluptate,
+                                        molestiae earum enim!</p>
+                                        <a href="#">Learn More</a>
+                                </div>
+                                <div>
+                                    <h2><span>UI/UGI</span> design</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Repellat vel labore commodi quo velit doloremque consequatur maiores 
+                                        repellendus sed dignissimos natus assumenda, blanditiis nobis sint quae voluptate,
+                                        molestiae earum enim!</p>
+                                        <a href="#">Learn More</a>
+                                </div>
+                                <div>
+                                    <h2><span>App</span> design</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Repellat vel labore commodi quo velit doloremque consequatur maiores 
+                                        repellendus sed dignissimos natus assumenda, blanditiis nobis sint quae voluptate,
+                                        molestiae earum enim!</p>
+                                        <a href="#">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+
+               </div>
+<!----------------portfolio section---------------->
+
+               <div id="portfolio">
+                     <div class="prtcontainer">
+                        <h1 class="sub=title">My work</h1>
+                           <div class="work-list">
+                            <div class="work">
+                                <img src="/WebDesignProject3/pic1.jpg" >
+                                   <div class="layer">
+                                     <h3>Social Media App</h3>
+                                     <p>The app connected you to to the talented <br> people around the world</p>
+                                     <a href="#"><i class='bx bx-code-alt'></i></a><!--Add a link tag(code) form boxicon-->
+                                   </div>
+                            </div>
+                            <div class="work">
+                                <img src="/WebDesignProject3/pic2.jpg" >
+                                <div class="layer">
+                                    <h3>Remote Jobs App</h3>
+                                    <p>The app connected you to to the talented <br> people around the world</p>
+                                    <a href="#"><i class='bx bxs-crop'></i></a><!--Add a link tag (crop-alt)form boxicon-->
+                                  </div>
+                            </div>
+                            <div class="work">
+                                <img src="/WebDesignProject3/pic3.jpg" >
+                                <div class="layer">
+                                    <h3>Online Shopping App</h3>
+                                    <p>The app connected you to to the talented <br> people around the world</p>
+                                    <a href="#"><i class='bx bx-link-external'></i></a><!--Add a link tag (app-store)form boxicon-->
+                                  </div>
+                            </div>
+                            <div class="work">  
+                                <img src="/WebDesignProject3/pic5.jpg" >
+                                <div class="layer">
+                                    <h3>Designing App</h3>
+                                    <p>The app connected you to to the talented <br> people around the world</p>
+                                    <a href="#"><i class='bx bxs-quote-single-left'></i></a><!--Add a link tag form boxicon-->
+                                  </div>
+                            </div>
+                           </div>
+                           <a href="#" class="btn">See More</a>
+                     </div>
+               </div>
+            <!--------------Contact content-------->
+            <div id="contact">
+                <div class="contact-container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="sub-title">Contact Me</h1>
+                             <P><i class='bx bxs-paper-plane'></i>contact@example.com</P>
+                             <p><i class='bx bxs-phone'></i>0768805294</p>
+                             <div class="scocial-icons">
+                                <a href=""><i class='bx bxl-facebook-circle'></i></a><!--add boxicon icons fb-->
+                                <a href=""><i class='bx bxl-twitter'></i></a><!--add boxicon icons X-->
+                                <a href=""><i class='bx bxl-instagram-alt'></i></a><!--add boxicon icons Ig-->
+                                <a href=""><i class='bx bxl-linkedin'></i></a><!--add boxicon icons linkin-->
+                             </div>
+                             <a href="/WebDesignProject3/Download.pdf" download class="btn btn2">Download CV</a>
+                        </div>
+                        <div class="contact-right">
+                            <form  name="submit-to-google-sheet">
+                                <input type="text" name="Name" placeholder="Your name" required>
+                                <input type="email" name="email" placeholder="Your Email" required>
+                                <textarea name="message"rows = "6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn btn2">Submit</button>
+                            </form>
+                            <span id="msg"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>copyright © Collo. Made by<i class='bx bxs-heart'></i> @Collo_2543</p>
+                </div>
+            </div>
+          
+       <script>
+        const tablinks = document.getElementsByClassName("tab-links");
+        const tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){  
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+       </script>
+       <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = 0;
+        }
+        function closemenu(){
+            sidemenu.style.right ='-200px';
+        }
+       </script>
+       <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbziZvmX9Tfkzm8QI1_zFvAaXvWSAU1rCx17AQp76syy0aOYi_3dn-D6j-7tpvEOrVOK/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message send succesfully..."
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })  
+      </script>
+</body>
+</html>
